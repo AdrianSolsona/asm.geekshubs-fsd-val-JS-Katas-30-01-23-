@@ -1,4 +1,4 @@
-/*//Ejercicio 1
+//Ejercicio 1
 let numero = 2;
 let numero2 = 3;
 
@@ -82,7 +82,7 @@ switch (diaSemana) {
     default:
         console.log("No es un dia de la semana")
         break;
-}*/
+}
 //Ejercicio 12
 let contraseña = "password";
 let intentos =  prompt("Indicame la contraseña");
@@ -99,10 +99,7 @@ else{
     console.log("Has excedido el numero de intentos incorrectos");
 }
 
-
-
-
-/*//Ejericio 13
+//Ejericio 13
 let numero1Calculadora = parseInt(prompt("Inserta el primer numero"))
 let numero2Calculadora = parseInt(prompt("Inserta el segundo numero"))
 let operando = prompt("ingresa el operando")
@@ -119,5 +116,5 @@ if(operando == "-"){
 }
 if(operando == "/"){
     console.log(numero1Calculadora / numero2Calculadora)
-}*/
+}
 
