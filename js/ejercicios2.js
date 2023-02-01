@@ -1,4 +1,4 @@
-//Ejercicio1
+/*//Ejercicio1
 let figura = prompt("El radio de que figura desea calcular");
 let circulo = "circulo";
 switch(figura){
@@ -19,8 +19,10 @@ switch(figura){
             resultadoCuadrado = (lado1 * lado2);
             console.log("El area del cuadrado es " + resultadoCuadrado)
     default:
-        console.log("No es un figura correcta")        
-}/* Alternativa al case declarando variable cuadrado triangulo y circulo
+        console.log("No es un figura correcta") 
+        
+}       
+/* Alternativa al case declarando variable cuadrado triangulo y circulo
 if(figura === circulo){
         let radio = parseInt(prompt("Introduce el radio del circulo"))
         let resultadoCirculo = ((radio**2)*3.14)
@@ -77,15 +79,58 @@ else if(convertirMoneda === "dolares"){
 else if(convertirMoneda === "yenes"){
     console.log((euros * 129.852) + convertirMoneda)
 }
-*/
+
 //Ejercicio 8
-let arrayNumeros = prompt("Inserta un numero")
 let arrayVacio = []
+
 for (let i = 1; i <= 10; i++){
     let arrayNumeros = prompt("Inserta un numero")
     arrayVacio += arrayNumeros
-    let indice = arrayVacio.indexOf(arrayNumeros)
-    console.log(indice)
+    console.log(arrayVacio)
+    console.log(arrayVacio.indexOf(arrayNumeros))
 }
-console.log(arrayVacio)
-console.log(arrayVacio.indexOf(arrayNumeros))
+*/
+
+//Ejercicio 9
+let tamañoArray = prompt("Indica el tamaño del array");
+let arrayVacio2 = [];
+let maximoNumero = 9;
+let minimoNumero = 0;
+let sumaArray = 0;
+
+
+for (let i = 1; i <= tamañoArray; i++){
+    arrayVacio2 += ((Math.floor(Math.random() * maximoNumero) + minimoNumero));
+    sumaArray += arrayVacio2;
+}
+console.log(arrayVacio2)
+console.log(sumaArray)
+/*
+//Ejercicio 10
+
+let tamañoMaximoArray = prompt("Indica el tamaño del array");
+let arrayVacioPrimo = [];
+let minimoNumeroPrimo = 0;
+
+
+for (let i = 1; i <= tamañoArrayPrimo; i++){
+    arrayVacioPrimo += ((Math.floor(Math.random() * tamañoMaximoArray) + minimoNumeroPrimo));
+    sumaArray += arrayVacioPrimo;
+}
+console.log(arrayVacioPrimo)
+
+
+/*
+let numeroPedido = ParseInt(prompt("Introduce un numero"));
+let sumaArray = 0;
+while(numeroPedido > 0){
+    if(numeroPedido %2 === 0){
+        console.log(numeroPedido + "Es par")
+        sumaArray += numeroPedido;
+    }
+    numeroPedido--;
+}
+let resultado = (sumaArray %2 == 1) ? "Es impar": "Es par";
+console.log(sumaArray)
+console.log(resultado)
+*/
